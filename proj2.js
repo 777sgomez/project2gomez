@@ -30,3 +30,33 @@ function generateComputerChoice() {
         computerChoice = "Scissors"
     }
 }
+
+function playRound() {
+    if (userChoice === computerChoice)
+    {
+        tiesScore = tiesScore++; tiesScore++; gameTies.textContent = tiesScore;
+    }
+    else if (userChoice === "Rock")
+    {
+        if (computerChoice === "Scissors")
+        {
+            userScores = userScores++; userScores++; userChoiceW.textContent = userScores;
+        }
+    }
+    else if (computerChoice === "Paper")
+    {
+        computerScores = computerScores++; computerScores++; computerChoiceL.textContent = computerScores;
+    }
+    else if (userChoice === "Scissors")
+    {
+        if (computerChoice === "Rock")
+        {
+            computerScores = computerScores++; computerScores++; computerChoiceL.textContent = computerScores;
+        }
+    }
+    else if (computerChoice === "Paper")
+    {
+        userScores = userScores++; userScores++; userChoiceW.textContent = userScores;
+    }
+    return (userChoice, computerChoice);
+}
