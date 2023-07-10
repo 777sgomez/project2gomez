@@ -8,3 +8,5 @@ let userChoice;
 const userChoiceW = document.getElementById("userChoiceW");
 const gameTies = document.getElementById("gameTies");
 const computerChoiceL = document.getElementById("computerChoiceL");
+
+const buttonChoices = document.querySelectorAll("button");
