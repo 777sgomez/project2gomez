@@ -10,3 +10,9 @@ const gameTies = document.getElementById("gameTies");
 const computerChoiceL = document.getElementById("computerChoiceL");
 
 const buttonChoices = document.querySelectorAll("button");
+
+buttonChoices.forEach(buttonChoice => buttonChoice.addEventListener("click", (e) => {
+    userChoice = e.target.id
+    generateComputerChoice()
+    playRound()
+}))
